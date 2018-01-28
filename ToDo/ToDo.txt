@@ -4,6 +4,6 @@ Project ideas
 Chat
 Class attendance webapp
 Rock-paper-scissors
-Oter collaborate game?
+Other collaborate game?
 
 
