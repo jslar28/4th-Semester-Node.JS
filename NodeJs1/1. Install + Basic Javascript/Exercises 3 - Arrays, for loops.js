@@ -30,13 +30,6 @@ var diet = ["tomato", "cucumber", "rocolla", "kale"]
 // You are a programmer. In one line (one statement) insert hamburger, soda and pizza between the elements rocolla and kale
 
 //--------------------------------------
-// Solution: 
-        // index, howmany,
-diet.splice(3, 0, "hamburger", "soda", "pizza");
-
-// a.push.apply(diet, "hamburger", "soda", "pizza")  // only pushes to the end
-
-//--------------------------------------
 //Exercise 5 - Remove element
 
 // You don't like kale at all. Remove the LAST element of the array.

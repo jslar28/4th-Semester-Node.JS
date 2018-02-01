@@ -30,22 +30,6 @@ var numberTwo = "2.30";
 // add those two numbers and show the result
 // you cannot touch line 1 neither line 2
 
-//--------------------------------------
-Solutions:
-
-var numberOne = "1.10";
-var numberTwo = "2.30";
-
-var total = parseFloat(numberOne) + parseFloat(numberTwo);
-
-console.log(total);
-
-var numberOne = "1.10";
-var numberTwo = "2.30";
-
-var total = Number(numberOne) + Number(numberTwo);
-
-console.log(total);
 
 //--------------------------------------
 //Exercise 4 - Add the numbers and the total with 2 decimals
