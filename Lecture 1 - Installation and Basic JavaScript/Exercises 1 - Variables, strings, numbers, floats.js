@@ -9,7 +9,8 @@ var lastName = "Latif";
 // show in the console
 // My first name is Anders and my last name is Latif
 
-//console.log(firstName + " " + lastName);
+console.log("Exercise 1:");
+console.log("My first name is " + firstName + " and my last name is " + lastName);
 
 //--------------------------------------
 //Exercise 2 - Numbers and Strings
@@ -21,12 +22,9 @@ var number = 1;
 // The result should be 2018
 // You cannot touch line 1 or 2
 
-var currentYear = parseInt(year) + number;
-
-var alsoCurrentYear = Number(year) + number;
-
-var alsoAlsoCurrentYear = (+year) + number;
-// console.log(currentYear);
+console.log("Exercise 2:");
+var newYear = parseInt(year) + number;
+console.log(newYear);
 
 //--------------------------------------
 
@@ -39,10 +37,9 @@ var numberTwo = "2.30";
 // add those two numbers and show the result
 // you cannot touch line 1 neither line 2
 
-var one = parseFloat(numberOne);
-var two = parseFloat(numberTwo);
-
-//console.log(one + two);
+console.log("Exercise 3:");
+var firstAddition = Number(numberOne) + Number(numberTwo);
+console.log(firstAddition);
 
 //--------------------------------------
 //Exercise 4 - Add the numbers and the total with 2 decimals
@@ -50,12 +47,10 @@ var two = parseFloat(numberTwo);
 var numberOne = "1.10";
 var numberTwo = "2.30";
 
-var one = parseFloat(numberOne);
-var two = parseFloat(numberTwo);
-
-var sum = (one + two).toFixed(2);
-
-//console.log(sum);
+console.log("Exercise 4:");
+var sum = Number(numberOne) + Number(numberTwo);
+var fixedSum = sum.toFixed(2);
+console.log(fixedSum);
 
 //--------------------------------------
 //Exercise 5 - Decimals and average
@@ -66,10 +61,10 @@ var three = 98;
 
 // Show in the console the avg. with 5 decimals
 
-var average = (one + two + three) / 3;
-
-
-//console.log(average.toFixed(5));
+console.log("Exercise 5:");
+var average = (one + two + three)/3;
+var averageWithDecimals = average.toFixed(5);
+console.log(averageWithDecimals);
 
 //--------------------------------------
 //Exercise 6 - Get the character by index
@@ -77,15 +72,9 @@ var average = (one + two + three) / 3;
 var letters = "abc"
 // Get me the character "c"
 
-var letterC = letters.substring(2, 3);
-
-var oneLetter = letters[2];
-
-var letterC = letters.charAt(2);
-
-var alsoLetterC = letters.slice(-1);
-
-//console.log(alsoLetterC);
+console.log("Exercise 6:");
+var thirdChar = letters.charAt(2);
+console.log(thirdChar);
 
 //--------------------------------------
 //Exercise 7 - Replace
@@ -94,12 +83,8 @@ var fact = "You are learning javascript!";
 
 // capitalize the J in Javascript
 
-//var fact = fact.slice(0, 17) + fact.charAt(17).toUpperCase() + fact.slice(18);
-
-//var fact = fact[fact.indexOf("j")].toUpperCase();
-
+console.log("Exercise 7:");
 var fact = fact.replace("j", "J");
-
 console.log(fact);
 
 //--------------------------------------
