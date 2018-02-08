@@ -1,0 +1,69 @@
+Create folder
+Create package.json
+Create object with dependency id with key "express" and value of the version
+Create app.js file (its kind of convention)
+Run "npm install" in the Lecture 2 folder
+    This creates the node_modules folder (with a lot of files)
+    This also creates lockfile as package-lock.json
+
+var express = require('express');   //import in Node
+var app = express();                //instantiate the object
+
+Create a port to listen
+app.listen(3000);                   //open a port to listen
+
+localhost = 127.0.0.1
+port = 3000
+
+http://127.0.0.1:3000/ will print:
+Cannot GET /
+
+CMD to stop listening = CTRL + C.
+
+Second parameters of .get are callback functions:
+
+function(req, res) {
+    req.sendt(...);
+}
+
+sendStatus(418) = I'm a teapot
+sendStatus(404) = Not found
+sendStatus(200) = OK
+
+------
+
+This will print "OK" if you go to localhost:3000/status.
+
+app.get("/status", function(req, res) {
+    res.sendStatus(200);
+});
+
+------
+
+This will print a JSON object in the browser:
+
+        {
+            message: "Hello world.",
+            code: 200
+        }
+
+app.get("/give_me_the_response", function(req, res) {
+    var response = {"message": "Hello world."};
+    response.code = 200;
+    res.send(response);
+})
+
+------
+
+A common error is when you're trying to run something on the same port
+server.address().port;
+
+http://127.0.0.1:3000/status/give_me_the_response = full path
+http://127.0.0.1:3000 = root
+/give_me_the_response = URL parameter
+
+:myAnial = dynamic url variable / url paramter
+
+It's bad practice to store data in the API
+
+https://www.npmjs.com/package/request
