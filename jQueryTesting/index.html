@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing jQuery</title>
+</head>
+<body>
+    <h1 id="title">inside the shell</h1>
+    <div class="wrapper">
+        <p class="message">
+            We can now see this in the browser.
+        </p>
+    </div>
+    
+    <p class="message">
+        This is message.
+    </p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $("#title").css("background-color", "blue");
+        $(".message .message").text("New message");
+    </script>
+</body>
+</html>

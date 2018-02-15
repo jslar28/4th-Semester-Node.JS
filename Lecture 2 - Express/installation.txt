@@ -67,3 +67,23 @@ http://127.0.0.1:3000 = root
 It's bad practice to store data in the API
 
 https://www.npmjs.com/package/request
+
+
+Command to install express : npm install --save express
+Command to install globally : npm install -g <dependency>
+    Example: npm install -g nodemon
+
+Another command: console.log(__dirname);
+
+Command:
+$("body").css("background-color", "red");
+- Accesses the paragraph
+- Sets the key, to be equal to the value using css
+- $ == global DOM
+
+If an ID has been set, you can access it using the #title (<h1 id = "title">)
+
+btoa(); incode
+atob(); decode
+
+
